@@ -20,7 +20,17 @@
 <pre>
 <?php
 
-?></pre>
+$news = file_get_contents('../../news_data/news.txt');
+$news = '2018-06-03 ニュースを追加しました' . $news;
+file_put_contents('../../news_data/news.txt', $news);
+print($news);
+
+// readfile('../../news_data/news.txt');
+
+?>
+
+
+</pre>
 </main>
 </body>    
 </html>
